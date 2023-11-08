@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pacientes</title>
+    <script type="text/javascript" src="PacienteJs/guardarPaciente.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+    <ul class="nav nav-pills">
+
+        <li class="nav-item">
+
+            <a class="nav-link" href="/ListaPaciente.html">Listar pacientes</a>
+
+        </li>
+
+    </ul>
+
+    <div class="row">
+
+        <div class="col-sm-7" style="background-color:#e6fffa; padding:10px; border-radius:3px">
+
+            <h3>Agregar Paciente</h3>
+
+            <form id="add_new_paciente">
+
+                <div class="form-group">
+
+                    <label class="control-label" for="nombre">Nombre:</label>
+
+                    <input type="text" class="form-control" id="nombre"
+
+                           placeholder="Ingrese el titulo"
+
+                           name="nombre" required></input>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label class="control-label" for="apellido">apellido:</label>
+
+                    <input type="text" class="form-control" id="apellido"
+
+                           placeholder="Ingrese el apellido"
+
+                           name="apellido" required></input>
+
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label" for="fechaIngreso">Fecha de ingreso:</label>
+                    <input type="date" class="form-control" id="fechaIngreso" name="fechaIngreso" required>
+                </div>
+
+
+                <div class="form-group">
+
+                    <label class="control-label" for="dni">dni:</label>
+
+                    <input type="text" class="form-control" id="dni"
+
+                           placeholder="Ingrese el dni"
+
+                           name="dni" required></input>
+
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label" for="mail">Correo electrónico:</label>
+                    <input type="text" class="form-control" id="mail" placeholder="Ingrese el correo" name="mail" required>
+                </div>
+
+
+
+
+
+                <button type="submit" class="btn btn-danger"
+
+                        id="btn-add-new-premio">Guardar</button>
+
+            </form>
+
+            <div id="response" style="display:none; margin-top:10px">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+</body>
+</html>
